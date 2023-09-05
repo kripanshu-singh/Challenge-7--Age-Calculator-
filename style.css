@@ -99,3 +99,7 @@ button[value="Reset"] {
   color: #ff9b50;
   font-weight: bold;
 }
+
+.messageContainer span.emo {
+  font-size: xx-large;
+}
