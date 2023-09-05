@@ -1,4 +1,6 @@
 const a = document.getElementById("date");
+const currentDate = new Date().toISOString().split("T")[0];
+a.value = currentDate;
 const birth = (e) => {
   let b = document.getElementById("age");
   // Getting All Birth Dates
@@ -46,8 +48,11 @@ a.addEventListener("change", birth);
 
 const re = document.getElementById("reset");
 const saaf = () => {
+  const a = document.getElementById("date");
+  const currentDate = new Date().toISOString().split("T")[0];
+  a.value = currentDate;
   let b = document.getElementById("age");
-  b.innerHTML = "";
-  a.value = "";
+  b.innerHTML =
+    "You are <span>0</span> year, <span>0</span> month and <span>0</span> days old.";
 };
 re.addEventListener("click", saaf);
