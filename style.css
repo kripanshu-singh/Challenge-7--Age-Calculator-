@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  height: 85%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,7 +89,7 @@ button[value="Reset"] {
 
 .messageContainer {
   margin-left: 80px;
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: larger;
   color: white;
 }
@@ -98,8 +98,4 @@ button[value="Reset"] {
   font-size: larger;
   color: #ff9b50;
   font-weight: bold;
-}
-
-.messageContainer span.emo {
-  font-size: xx-large;
 }

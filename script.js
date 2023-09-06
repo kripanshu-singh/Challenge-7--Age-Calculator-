@@ -1,6 +1,4 @@
 const a = document.getElementById("date");
-const currentDate = new Date().toISOString().split("T")[0];
-a.value = currentDate;
 const birth = (e) => {
   let b = document.getElementById("age");
   // Getting All Birth Dates
@@ -19,7 +17,7 @@ const birth = (e) => {
   console.log(days_in_month(birth_month));
   if (e.target.valueAsDate > date) {
     b.innerHTML =
-      "Don't rush things, Take your time and enjoy the womb service while it lasts! <span class = 'emo'>😉</span>";
+      "Don't rush things, Take your time and enjoy the womb service while it lasts!";
   } else {
     let age_year = cur_year - birth_year;
     let age_month, age_date;
@@ -48,11 +46,8 @@ a.addEventListener("change", birth);
 
 const re = document.getElementById("reset");
 const saaf = () => {
-  const a = document.getElementById("date");
-  const currentDate = new Date().toISOString().split("T")[0];
-  a.value = currentDate;
   let b = document.getElementById("age");
-  b.innerHTML =
-    "You are <span>0</span> year, <span>0</span> month and <span>0</span> days old.";
+  b.innerHTML = "";
+  a.value = "";
 };
 re.addEventListener("click", saaf);
