@@ -1,107 +1,218 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dancing+Script&family=Indie+Flower&family=Pacifico&family=Poppins&display=swap");
+@media all and (min-width: 750px) {
+  * {
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: Poppins;
+  }
 
-* {
-  padding: 0;
-  margin: 0;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  box-sizing: border-box;
-  font-family: Poppins;
-}
+  html {
+    background-image: linear-gradient(480deg, #4d2db7, #ec53b0);
+    height: 100%;
+  }
+  body {
+    height: 100%;
+  }
+  .contain {
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 15vh;
+    padding-left: 15vh;
+    padding-top: 15vh;
+    padding-right: 15vh;
+  }
 
-html {
-  background-image: linear-gradient(480deg, #4d2db7, #ec53b0);
-  height: 100%;
-}
-body {
-  height: 100%;
-}
-.contain {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-top: 15vh;
-}
+  .headContainer {
+    width: 100%;
+    /* margin: 0px 0px 60px 0px; */
+    font-size: xx-large;
+    color: white;
+  }
 
-.headContainer {
-  width: 100%;
-  margin: 0px 0px 60px 80px;
-  font-size: xx-large;
-  color: white;
-}
+  .headContainer span {
+    color: #ff9b50;
+  }
 
-.headContainer span {
-  color: #ff9b50;
-}
+  .formContainer {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.733);
+    transition: box-shadow 0.5s;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background: #aca8b665;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+  }
 
-.formContainer {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.733);
-  transition: box-shadow 0.5s;
-  max-width: 600px;
-  display: flex;
-  margin-left: 80px;
-  align-items: center;
-  padding: 25px;
-  background: #aca8b665;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-}
+  .formContainer:hover {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.452);
+    transition: box-shadow 0.5s;
+  }
 
-.formContainer:hover {
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.452);
-  transition: box-shadow 0.5s;
-}
+  input[name="date"] {
+    flex: 1;
+    padding: 15px 5px 15px 25px;
+    font-size: 18px;
+    font-weight: 400;
+    border: 0px solid #564a8083;
+    outline: 0;
+    border-radius: 8px;
+    position: relative;
+  }
 
-input[name="date"] {
-  flex: 1;
-  margin-right: 20px;
-  padding: 15px 5px 15px 25px;
-  font-size: 18px;
-  font-weight: 400;
-  border: 0px solid #564a8083;
-  outline: 0;
-  border-radius: 8px;
-  position: relative;
-}
+  button[value="Reset"] {
+    padding: 15px 50px;
+    margin-left: 15px;
+    border: 1px solid #2d1a6d83;
+    background-color: #ff9b50;
+    outline: 0;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
 
-button[value="Reset"] {
-  padding: 15px 50px;
-  border: 1px solid #2d1a6d83;
-  background-color: #ff9b50;
-  outline: 0;
-  font-weight: 500;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 8px;
-}
+  .formContainer input::-webkit-calendar-picker-indicator {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(95%);
+    background-size: 25px;
+    cursor: pointer;
+  }
 
-.formContainer input::-webkit-calendar-picker-indicator {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: auto;
-  height: auto;
-  position: absolute;
-  background-position: calc(95%);
-  background-size: 25px;
-  cursor: pointer;
-}
+  .messageContainer {
+    margin-top: 30px;
+    font-size: larger;
+    color: white;
+  }
 
-.messageContainer {
-  margin-left: 80px;
-  margin-top: 30px;
-  font-size: larger;
-  color: white;
-}
+  .messageContainer span {
+    font-size: larger;
+    color: #ff9b50;
+    font-weight: bold;
+  }
 
-.messageContainer span {
-  font-size: larger;
-  color: #ff9b50;
-  font-weight: bold;
+  .messageContainer .emo {
+    font-size: 30px;
+  }
 }
+@media all and (min-width: 200px) and (max-width: 749px) {
+  * {
+    padding: 0;
+    margin: 0;
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: Poppins;
+  }
+  html,
+  body {
+    background-image: linear-gradient(480deg, #4d2db7, #ec53b0);
+    height: 100%;
+  }
 
-.messageContainer .emo {
-  font-size: 30px;
+  .contain {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20vh;
+    /* padding-right: 150px; */
+    padding-left: 10vw;
+    padding-right: 10vw;
+    flex-wrap: wrap;
+  }
+
+  .headContainer {
+    width: 100%;
+    font-size: large;
+    color: white;
+  }
+
+  .headContainer span {
+    color: #ff9b50;
+  }
+
+  .formContainer {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.733);
+    transition: box-shadow 0.5s;
+    /* max-width: 250px; */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #aca8b665;
+    max-width: 400px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+
+  .formContainer:hover {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.452);
+    transition: box-shadow 0.5s;
+  }
+  input[name="date"] {
+    flex: 1;
+    /* margin-right: 20px; */
+    padding: 8px 5px 8px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    border: 0px solid #564a8083;
+    outline: 0;
+    border-radius: 8px;
+    position: relative;
+  }
+  button[value="Reset"] {
+    padding: 8px 10px 8px 10px;
+    border: 1px solid #2d1a6d83;
+    background-color: #ff9b50;
+    box-sizing: border-box;
+    margin-left: 8px;
+    /* outline: 0; */
+    font-weight: 400;
+    /* text-align: center; */
+    /* font-size: 12px; */
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .formContainer input::-webkit-calendar-picker-indicator {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(95%);
+    background-size: 18px;
+    cursor: pointer;
+  }
+
+  .messageContainer {
+    margin-top: 30px;
+    font-size: small;
+    color: white;
+    text-align: center;
+  }
+
+  .messageContainer span {
+    font-size: larger;
+    color: #ff9b50;
+  }
+
+  .messageContainer .emo {
+    font-size: 20px;
+    font-weight: bold;
+  }
 }
