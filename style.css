@@ -13,12 +13,14 @@ html {
   background-image: linear-gradient(480deg, #4d2db7, #ec53b0);
   height: 100%;
 }
-
 body {
+  height: 100%;
+}
+.contain {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-top: 15vh;
 }
 
 .headContainer {
@@ -98,4 +100,8 @@ button[value="Reset"] {
   font-size: larger;
   color: #ff9b50;
   font-weight: bold;
+}
+
+.messageContainer .emo {
+  font-size: 30px;
 }

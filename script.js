@@ -17,7 +17,7 @@ const birth = (e) => {
   console.log(days_in_month(birth_month));
   if (e.target.valueAsDate > date) {
     b.innerHTML =
-      "Don't rush things, Take your time and enjoy the womb service while it lasts!";
+      "Don't rush things, Take your time and enjoy the womb service while it lasts!<span class = 'emo'> 😉 </span>";
   } else {
     let age_year = cur_year - birth_year;
     let age_month, age_date;
